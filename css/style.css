@@ -1,13 +1,18 @@
+.header {
+  text-align: right;
+}
+
 .header-logo {
-  margin-top: 10px;
+  margin-top: 15px;
   display: inline-block;
+  width: 100px;
+  -webkit-transform: translateX(-175px);
+          transform: translateX(-175px);
 }
 
 .header-logo__img {
   width: 200px;
   position: relative;
-  -webkit-transform: translateX(-86px);
-          transform: translateX(-86px);
 }
 
 .header-menu {
@@ -27,10 +32,110 @@
   font-size: 16px;
 }
 
+.header-descr {
+  display: inline-block;
+  position: relative;
+  -webkit-transform: translateY(-80px);
+          transform: translateY(-80px);
+  color: #FF6F61;
+}
+
+.header-date {
+  text-transform: uppercase;
+  display: block;
+  font-size: 22px;
+  font-family: 'Playfair Display Bold';
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.header-tel {
+  margin-top: 10px;
+  display: inline;
+}
+
+.header-tel__link {
+  color: #FF6F61;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.header-btn {
+  background-color: #FF6F61;
+  border: none;
+  text-transform: uppercase;
+  font-size: 17px;
+  font-weight: 600;
+  font-family: 'Playfair Display Bold';
+  margin-top: 80px;
+  cursor: pointer;
+  outline: none;
+  padding: 5px;
+  display: block;
+}
+
+.header-contacts {
+  text-align: start;
+}
+
+.contacts-link {
+  display: inline-block;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-top: 16px;
+  text-decoration: none;
+  margin-left: 14px;
+}
+
+.main-utp {
+  font-size: 22px;
+  text-transform: uppercase;
+  background-color: #FF6F61;
+  color: #000;
+  font-family: 'Playfair Display Bold';
+  font-weight: 600;
+  padding: 10px;
+}
+
+.main-wrap {
+  background: url("../img/main-bg-100.jpg") center no-repeat;
+  background-size: cover;
+}
+
+.main-descr {
+  margin-top: 20px;
+}
+
+.main-btn {
+  text-transform: uppercase;
+  font-family: 'Playfair Display Bold';
+  font-weight: 600;
+  margin-top: 20px;
+  padding: 5px 10px 5px 10px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.down {
+  height: 40px;
+  display: block;
+  margin: auto;
+  margin-top: 30px;
+}
+
 body {
   background-color: #000;
   font-family: 'Playfair Display', 'Open Sans';
   color: #fff;
   margin: 0;
+}
+
+.bordered {
+  border-left: solid #fff 1px;
+}
+
+.no-pad {
+  padding-left: 1.2px !important;
 }
 /*# sourceMappingURL=style.css.map */
