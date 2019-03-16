@@ -6,12 +6,12 @@
   margin-top: 15px;
   display: inline-block;
   width: 100px;
-  -webkit-transform: translateX(-175px);
-          transform: translateX(-175px);
+  -webkit-transform: translateX(-141px);
+          transform: translateX(-141px);
 }
 
 .header-logo__img {
-  width: 200px;
+  width: 185px;
   position: relative;
 }
 
@@ -67,7 +67,7 @@
   font-size: 17px;
   font-weight: 600;
   font-family: 'Playfair Display Bold';
-  margin-top: 80px;
+  margin-top: 72px;
   cursor: pointer;
   outline: none;
   padding: 5px;
@@ -117,11 +117,63 @@
   cursor: pointer;
 }
 
+.main-btn__down {
+  width: 100%;
+  display: block;
+  text-align: center;
+  margin-top: 30px;
+}
+
 .down {
   height: 40px;
-  display: block;
-  margin: auto;
   margin-top: 30px;
+}
+
+.section-title {
+  text-transform: uppercase;
+  font-size: 36px;
+}
+
+.interest {
+  background: url("../img/second-bg.jpg") center no-repeat;
+  background-size: contain;
+}
+
+.interest-title {
+  margin-top: 70px;
+  display: block;
+  text-align: start;
+}
+
+.interest-down {
+  display: block;
+  margin-top: 380px;
+}
+
+.forwho {
+  background: url("../img/third-bg-100.jpg") center no-repeat;
+  background-size: contain;
+}
+
+.forwho-title {
+  margin-top: 70px;
+  display: block;
+  text-align: center;
+}
+
+.programm-wrap {
+  background: url("../img/forth-bg-100.jpg") top no-repeat;
+  background-size: cover;
+}
+
+.programm-btn {
+  position: relative;
+  -webkit-transform: translateX(-15px);
+          transform: translateX(-15px);
+}
+
+.programm-title {
+  text-align: end;
 }
 
 body {
@@ -129,6 +181,7 @@ body {
   font-family: 'Playfair Display', 'Open Sans';
   color: #fff;
   margin: 0;
+  font-weight: 600;
 }
 
 .bordered {
@@ -136,6 +189,10 @@ body {
 }
 
 .no-pad {
-  padding-left: 1.2px !important;
+  padding-left: 0px !important;
+}
+
+p {
+  margin-bottom: 50px;
 }
 /*# sourceMappingURL=style.css.map */
