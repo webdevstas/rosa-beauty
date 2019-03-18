@@ -10,7 +10,13 @@
     <link rel="stylesheet" href="./css/bootstrap-grid.min.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800|Playfair+Display:400,700,900&amp;subset=cyrillic"
         rel="stylesheet">
-</head>
+    <!-- slick -->
+    <link rel="stylesheet" type="text/css" href="./slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css"/>
+      
+    <script src="http://code.jquery.com/jquery-1.12.4.min.js"
+        integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    </head>
 
 <body>
     <div class="container">
@@ -417,6 +423,43 @@
                       </table></div>
             </div>
     </section>
+    <section class="place">
+        <div class="container">
+        <div class="row">
+            <div class="col-4 bordered"><h1 class="section-title programm-title">Место проведения</h1></div>
+            <div class="col-4 bordered"></div>
+            <div class="col-4 bordered"></div>
+        </div>
+        <div class="row">
+                <div class="col-8 bordered no-pad">
+                        <div class="fade">
+                                <div><img src="./img/Spikers/motiniva_new_web.jpg" alt="" class="slider-img"></div>
+                                <div><img src="./img/Spikers/alexbox_web.jpg" alt="" class="slider-img"></div>
+                                <div><img src="./img/Spikers/kartashev3_web.jpg" alt="" class="slider-img"></div>
+                              </div>
+                </div>
+                <div class="slider-dots"></div>
+                <div class="col-4 bordered"></div>
+            </div>
+    </div>
+    </section>
+                                            <!-- Slick js -->
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="./slick/slick.min.js"></script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+        $('.fade').slick({
+                dots: true,
+                infinite: true,
+                speed: 500,
+                fade: true,
+                cssEase: 'linear',
+                arrows: false
+            });
+    });
+  </script>
 </body>
 
 </html>
