@@ -178,6 +178,12 @@
   text-align: end;
 }
 
+.programm-adv {
+  border: 1px solid #fff;
+  padding-left: 3px;
+  padding-right: 3px;
+}
+
 .speakers-prof {
   text-transform: uppercase;
 }
@@ -225,6 +231,22 @@ td {
   background-color: rgba(255, 255, 255, 0.2);
 }
 
+.pricing-table__btn {
+  height: 100%;
+  width: 100%;
+  border: none;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  background-color: #FF6F61;
+  font-family: 'Playfair Display Bold';
+  font-weight: 600;
+  font-size: 18;
+}
+
+.pricing-table__btn_wrap {
+  padding: 0;
+}
+
 .border_right {
   border-right: 1px solid #fff;
 }
@@ -235,6 +257,19 @@ td {
 
 .place-title {
   margin: 0;
+}
+
+#map {
+  height: 100%;
+  width: 100%;
+}
+
+.footer-logo {
+  margin-top: 25px;
+  display: inline-block;
+  width: 100px;
+  -webkit-transform: translateX(-81px);
+          transform: translateX(-81px);
 }
 
 body {
