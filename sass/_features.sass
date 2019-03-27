@@ -12,7 +12,7 @@
         text-align: start
     &-down
         display: block
-        margin-top: 380px
+        margin-top: 340px
 .forwho
     background: url('../img/third-bg-100.jpg') center no-repeat
     background-size: contain
@@ -21,9 +21,11 @@
         display: block
         text-align: center
 .programm
+    width: 100%
     &-wrap
         background: url('../img/forth-bg-100.jpg') top no-repeat
         background-size: cover
+        width: 100%
     &-btn
         position: relative
         transform: translateX(-15px)
@@ -33,3 +35,9 @@
         border: 1px solid #fff
         padding-left: 3px
         padding-right: 3px 
+@media (max-width: 1200px)
+    .interest-down
+        margin-top: 150px
+@media (max-width: 576px)
+    .programm-wrap
+        background-size: cover

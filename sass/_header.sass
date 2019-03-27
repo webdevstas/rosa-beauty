@@ -59,3 +59,21 @@
     margin-top: 16px
     text-decoration: none
     margin-left: 14px
+@media (max-width: 1200px)
+    .header
+        &-logo
+            transform: translateX(-234px)
+        &-menu
+            display: none
+        &-descr
+            transform: translateY(-37px)
+    .contacts-link
+        display: none
+@media (max-width: 992px)
+    .header
+        &-logo
+            transform: translateX(-310px)
+        &-descr
+            transform: translateY(0)
+        &-btn
+            margin-top: 20px
