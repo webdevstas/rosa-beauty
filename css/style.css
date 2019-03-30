@@ -434,6 +434,62 @@ td {
   }
 }
 
+#modal {
+  height: 90vh;
+  width: 90vw;
+  background-color: rgba(0, 0, 0, 0.9);
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  z-index: 1000;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+  display: none;
+  padding: 20px;
+  border: solid 1.5px #fff;
+}
+
+#close {
+  width: 30px;
+  position: relative;
+  left: 97%;
+  cursor: pointer;
+}
+
+.modal-img {
+  max-width: 380px;
+  display: block;
+  margin: auto;
+}
+
+.modal-block {
+  display: none;
+}
+
+.modal-form__wrap {
+  text-align: center;
+  width: 100%;
+}
+
+.modal-form__input {
+  border: none;
+  background-color: #000;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  color: #fff;
+  display: block;
+  margin: auto;
+  margin-bottom: 20px;
+  width: 30%;
+}
+
+.modal-contacts__link {
+  display: block;
+  color: #ffffff;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
 body {
   background-color: #000;
   font-family: 'Playfair Display', 'Open Sans';
