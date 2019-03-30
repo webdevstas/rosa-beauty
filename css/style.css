@@ -6,8 +6,9 @@
   margin-top: 15px;
   display: inline-block;
   width: 100px;
-  -webkit-transform: translateX(-169px);
-          transform: translateX(-169px);
+  -webkit-transform: translateX(-322px);
+          transform: translateX(-322px);
+  position: relative;
 }
 
 .header-logo__img {
@@ -458,7 +459,7 @@ td {
 }
 
 .modal-img {
-  width: 60%;
+  width: 80%;
   display: block;
   margin: auto;
 }
@@ -485,7 +486,6 @@ td {
 }
 
 .modal-contacts__link {
-  display: block;
   color: #ffffff;
   font-size: 20px;
   margin-bottom: 10px;
