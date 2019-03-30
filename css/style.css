@@ -419,6 +419,10 @@ td {
   font-size: 22px;
 }
 
+.footer-btn {
+  margin-bottom: 20px;
+}
+
 @media (max-width: 576px) {
   .footer-title {
     margin-top: 20px;
