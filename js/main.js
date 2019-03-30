@@ -6,7 +6,7 @@ let modal = document.querySelector('#modal'),
 function modalClose() {
         modal.style.display = 'none';
         document.body.style.overflow = 'auto';
-        for (i = 0; i <= modalBlock.length; i++) {
+        for (i = 0; i < modalBlock.length; i++) {
             modalBlock[i].style.display = 'none';
         }
         

@@ -497,6 +497,15 @@ td {
   }
 }
 
+@media (max-width: 576px) {
+  #close {
+    left: 95%;
+  }
+  .modal-form__input {
+    width: 90%;
+  }
+}
+
 body {
   background-color: #000;
   font-family: 'Playfair Display', 'Open Sans';
