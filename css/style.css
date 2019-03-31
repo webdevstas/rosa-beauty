@@ -360,7 +360,8 @@ td {
   background-color: #FF6F61;
   font-family: 'Playfair Display Bold';
   font-weight: 600;
-  font-size: 18;
+  font-size: 18px;
+  display: block;
 }
 
 .pricing-table__btn_wrap {
