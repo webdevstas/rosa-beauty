@@ -1,22 +1,24 @@
 #modal
-    min-height: 90%
+    height: 90%
     width: 90%
     background-color: rgba(0, 0, 0, .9)
-    position: relative
-    // margin: auto
+    position: fixed
     left: 50% 
     top: 50%
     z-index: 1000
     transform: translateX(-50%) translateY(-50%)
     display: none
     padding: 20px
-    border: solid 1.5px #fff        
+    border: solid 1.5px #fff     
+    overflow: auto   
 #close
     width: 30px
-    position: absolute
-    left: 96%
+    position: fixed
+    top: 1%
+    left: 94%
     cursor: pointer
     z-index: 1500
+    display: none
 .modal
     &-img
         width: 80%
@@ -68,11 +70,8 @@
     .modal
         &-img
             display: none
-@media (max-width: 576px)
-    #close
-        left: 89%
+@media (max-width: 768px)
+    // #close
+    //     left: 89%
     .modal-form__input
         width: 90%
-@media (max-width: 360px)
-    #modal
-        top: 55%

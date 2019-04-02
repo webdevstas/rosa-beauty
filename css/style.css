@@ -442,10 +442,10 @@ td {
 }
 
 #modal {
-  min-height: 90%;
+  height: 90%;
   width: 90%;
   background-color: rgba(0, 0, 0, 0.9);
-  position: relative;
+  position: fixed;
   left: 50%;
   top: 50%;
   z-index: 1000;
@@ -454,14 +454,17 @@ td {
   display: none;
   padding: 20px;
   border: solid 1.5px #fff;
+  overflow: auto;
 }
 
 #close {
   width: 30px;
-  position: absolute;
-  left: 96%;
+  position: fixed;
+  top: 1%;
+  left: 94%;
   cursor: pointer;
   z-index: 1500;
+  display: none;
 }
 
 .modal-img {
@@ -526,18 +529,9 @@ td {
   }
 }
 
-@media (max-width: 576px) {
-  #close {
-    left: 89%;
-  }
+@media (max-width: 768px) {
   .modal-form__input {
     width: 90%;
-  }
-}
-
-@media (max-width: 360px) {
-  #modal {
-    top: 55%;
   }
 }
 
