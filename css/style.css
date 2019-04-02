@@ -292,6 +292,7 @@
 
 .speakers-img {
   width: 80%;
+  cursor: pointer;
 }
 
 .speakers-name {
