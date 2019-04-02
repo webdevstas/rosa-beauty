@@ -530,9 +530,15 @@ td {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 576px) {
   .modal-form__input {
     width: 90%;
+  }
+}
+
+@media (max-width: 420px) {
+  #close {
+    left: 93%;
   }
 }
 
