@@ -1,20 +1,22 @@
 #modal
-    min-height: 90vh
-    width: 90vw
+    min-height: 90%
+    width: 90%
     background-color: rgba(0, 0, 0, .9)
-    position: absolute
+    position: relative
+    // margin: auto
     left: 50% 
     top: 50%
-    // z-index: 1000
+    z-index: 1000
     transform: translateX(-50%) translateY(-50%)
     display: none
     padding: 20px
     border: solid 1.5px #fff        
 #close
     width: 30px
-    position: relative
-    left: 97%
+    position: absolute
+    left: 96%
     cursor: pointer
+    z-index: 1500
 .modal
     &-img
         width: 80%
@@ -41,15 +43,6 @@
             color: #ffffff
             font-size: 20px
             margin-bottom: 10px
-@media (max-width: 992px)
-    .modal
-        &-img
-            display: none
-@media (max-width: 576px)
-    #close
-        left: 95%
-    .modal-form__input
-        width: 90%
 #shim 
     /* фиксируем, растягиваем на весь доступный экран */
     position: fixed
@@ -71,3 +64,15 @@
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#7F000000,endColorstr=#7F000000)
      /* IE6–IE8 */
     zoom: 1
+@media (max-width: 992px)
+    .modal
+        &-img
+            display: none
+@media (max-width: 576px)
+    #close
+        left: 89%
+    .modal-form__input
+        width: 90%
+@media (max-width: 360px)
+    #modal
+        top: 55%
