@@ -478,6 +478,10 @@ td {
   display: none;
 }
 
+.modal-block li {
+  font-family: 'Open Sans';
+}
+
 .modal-form__wrap {
   text-align: center;
   width: 100%;
