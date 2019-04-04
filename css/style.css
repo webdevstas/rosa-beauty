@@ -453,7 +453,6 @@ td {
   -webkit-transform: translateX(-50%) translateY(-50%);
           transform: translateX(-50%) translateY(-50%);
   display: none;
-  padding: 20px;
   border: solid 1.5px #fff;
   overflow: auto;
 }
@@ -470,7 +469,9 @@ td {
 
 .modal-img {
   width: 92%;
+  display: block;
   margin: auto;
+  margin-top: 10px;
 }
 
 .modal-block {
