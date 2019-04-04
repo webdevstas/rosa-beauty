@@ -1,7 +1,7 @@
 #modal
     height: 90%
     width: 90%
-    background-color: rgba(0, 0, 0, .9)
+    background-color: rgba(0, 0, 0, .85)
     position: fixed
     left: 50% 
     top: 50%
@@ -10,7 +10,7 @@
     display: none
     // padding: 20px
     border: solid 1.5px #fff     
-    overflow: auto   
+    overflow: auto 
 #close
     width: 30px
     position: fixed
@@ -33,6 +33,10 @@
         &__wrap
             text-align: center
             width: 100%
+            position: absolute
+            left: 50%
+            top: 50%
+            transform: translateX(-50%) translateY(-50%)
         &__input
             border: none
             background-color: rgba(0, 0, 0, 0)
