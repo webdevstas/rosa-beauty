@@ -45,16 +45,16 @@
             <div id="payment" class="modal-block">
                     <style>.tinkoffPayRow{display:block;margin:1%;width:160px;}</style>
                     <script src="https://securepay.tinkoff.ru/html/payForm/js/tinkoff_v2.js"></script>
-                    <form name="TinkoffPayForm" onsubmit="pay(this); return false;">
+                    <form name="TinkoffPayForm" id="pay-form" onsubmit="pay(this); return false;">
                       <input class="tinkoffPayRow" type="hidden" name="terminalkey" value="1558329635812DEMO">
                       <input class="tinkoffPayRow" type="hidden" name="frame" value="true">
                       <input class="tinkoffPayRow" type="hidden" name="language" value="ru">
                         <input class="tinkoffPayRow" type="text" placeholder="Сумма заказа" name="amount" required>
-                        <input class="tinkoffPayRow" type="text" placeholder="Номер заказа" name="order">
-                        <input class="tinkoffPayRow" type="text" placeholder="Описание заказа" name="description">
-                        <input class="tinkoffPayRow" type="text" placeholder="ФИО плательщика" name="name">
+                        <input class="tinkoffPayRow" type="hidden" placeholder="Номер заказа" name="order">
+                        <input class="tinkoffPayRow" type="hidden" placeholder="Описание заказа" name="description">
+                        <input class="tinkoffPayRow" type="text" placeholder="ФИО плательщика" name="name" required>
                         <input class="tinkoffPayRow" type="text" placeholder="E-mail" name="email">
-                        <input class="tinkoffPayRow" type="text" placeholder="Контактный телефон" name="phone">
+                        <input class="tinkoffPayRow" type="text" placeholder="Контактный телефон" name="phone" required>
                         <input class="tinkoffPayRow" id="pay-btn" type="submit" value="Оплатить">
                     </form>
             </div>
@@ -94,6 +94,57 @@
                     </div>
                 </div>
             </div>
+            <div id="simtikov" class="modal-block">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <h2 class="modal-name">Рустем Симтиков</h2>
+                        <ul>
+                            <li>Многократный Чемпион Международных чемпионатов по перманентному макияжу</li>
+                            <li>Спикер международных конференций, конгрессов и форумов</li>
+                            <li>Тренер по перманентному международного уровня</li>
+                            <li>ТОП мастер Республики Казахстан</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6">
+                        <img src="./img/Spikers/simtikov.jpg" alt="" class="modal-img">
+                    </div>
+                </div>
+            </div>
+            <div id="brazinskaya" class="modal-block">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <h2 class="modal-name">Кристина Бразинская</h2>
+                        <ul>
+                            <li>Генеральный директор компании Тинель</li>
+                            <li>Практикующий мастер по перманентному макияжу с 2004 года</li>
+                            <li>Спикер международных конференций</li>
+                            <li>Владелица сети салонов красоты</li>
+                            <li>Международный тренер по перманентному макияжу</li>
+                            <li>Многократный Победитель чемпионатов по перманентному макияжу</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6">
+                        <img src="./img/Spikers/brazinskaya.jpg" alt="" class="modal-img">
+                    </div>
+                </div>
+            </div>
+            <div id="tarakanova" class="modal-block">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <h2 class="modal-name">Людмила Тараканова</h2>
+                        <ul>
+                            <li>Профессионал с 22-летним стажем</li>
+                            <li>Неоднократный призёр и финалист российских и международных конкурсов</li>
+                            <li>Победитель конкурса Givenchy 2018</li>
+                            <li>Основатель собственной школы Ludovik school</li>
+                            <li>Создатель авторских кистей Ludovik brushes</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6">
+                        <img src="./img/Spikers/tarakanova.jpg" alt="" class="modal-img">
+                    </div>
+                </div>
+            </div>
             <div id="vasheshnikov" class="modal-block">
                     <div class="row">
                         <div class="col-lg-6">
@@ -117,8 +168,7 @@
                     <div class="col-lg-6">
                         <h2 class="modal-name">Кристина Черноморова</h2>
                         <ul>
-                            <li>Основатель студии и создатель торговой марки Kris Black @black_mua, @krisblack_school
-                            </li>
+                            <li>Основатель студии и создатель торговой марки Kris Black</li>
                             <li>Преподаватель и практикующий специалист по художественному оформлению бровей</li>
                             <li>Судья международного чемпионата , BROW FEST , г.Краснодар 2018 /2019</li>
                             <li>Автор кистей для бровей KRIS BLACK PRO BRUSHES</li>
@@ -272,7 +322,7 @@
                                 <li>Международный судья чемпионатов по перманентному макияжу</li>
                                 <li>Владелец и основатель школы-студии перманентного макияжа CONTUR</li>
                                 <li>Автор и владелец бренда CONTUR PROFESSIONAL</li>
-                                <li>Организатор мероприятия для мастеров перманентного макияжа ЗОЛОТАЯ ПЧЕЛА.</li>
+                                <li>Организатор мероприятия для мастеров перманентного макияжа ЗОЛОТАЯ ПЧЕЛА</li>
                             </ul>
                         </p>
                     </div>

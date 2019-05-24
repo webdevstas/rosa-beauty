@@ -5,6 +5,9 @@ let modal = document.querySelector('#modal'),
     modalBlock = document.querySelectorAll('.modal-block'),
     speakersImg = document.querySelectorAll('.speakers-img'),
     payBtn = document.querySelector('#pay-btn');
+    payInput = document.querySelectorAll('.tinkoffPayRow'),
+    payForm = document.querySelector('#pay-form');
+
 
 
 closeBtn.addEventListener('click', function () {
@@ -26,10 +29,10 @@ for (i = 0; i < speakersImg.length; i++) {
     })
 }
 
-payBtn.addEventListener('click', function() {
-    modalClose();
-    location.href = '#main';
-});
+payForm.addEventListener('submit', function () {
+        modalClose();
+        location.href = '#main';
+    });
 
 function modalClose() {
     modal.style.display = 'none';
