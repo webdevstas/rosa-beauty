@@ -42,6 +42,22 @@
                     </div>
                 </div>
             </div>
+            <div id="payment" class="modal-block">
+                    <style>.tinkoffPayRow{display:block;margin:1%;width:160px;}</style>
+                    <script src="https://securepay.tinkoff.ru/html/payForm/js/tinkoff_v2.js"></script>
+                    <form name="TinkoffPayForm" onsubmit="pay(this); return false;">
+                      <input class="tinkoffPayRow" type="hidden" name="terminalkey" value="1558329635812DEMO">
+                      <input class="tinkoffPayRow" type="hidden" name="frame" value="true">
+                      <input class="tinkoffPayRow" type="hidden" name="language" value="ru">
+                        <input class="tinkoffPayRow" type="text" placeholder="Сумма заказа" name="amount" required>
+                        <input class="tinkoffPayRow" type="text" placeholder="Номер заказа" name="order">
+                        <input class="tinkoffPayRow" type="text" placeholder="Описание заказа" name="description">
+                        <input class="tinkoffPayRow" type="text" placeholder="ФИО плательщика" name="name">
+                        <input class="tinkoffPayRow" type="text" placeholder="E-mail" name="email">
+                        <input class="tinkoffPayRow" type="text" placeholder="Контактный телефон" name="phone">
+                        <input class="tinkoffPayRow" id="pay-btn" type="submit" value="Оплатить">
+                    </form>
+            </div>
             <div id="hromenko" class="modal-block">
                 <div class="row">
                     <div class="col-lg-6">
@@ -358,7 +374,7 @@
                     </div>
                 </div>
             </header>
-            <section class="main">
+            <section class="main" id="main">
                 <div class="row">
                     <div class="col-lg-4 col-md-6 bordered"></div>
                     <div class="col-lg-8 col-md-6 bordered no-pad">
@@ -694,12 +710,7 @@
                     <button class="speakers-btn modal-btn" name='hromenko'>О спикере</button>
                 </div>
                 <div class="col-lg-4 col-md-6 bordered no-pad">
-                    <img src="./img/Spikers/spiridonova.jpg" alt="" class="speakers-img" name="spiridonova">
-                    <h2 class="speakers-name">Анастасия Спиридонова</h2>
-                    <h3 class="speakers-prof">Мастер перманентного макияжа</h3>
-                    <div class="speakers-text">
-                        Губы с эффектом помады в один проход <br> "Wow lipstick"</div>
-                    <button class="speakers-btn modal-btn" name='spiridonova'>О спикере</button>
+                    
                 </div>
                 <div class="col-lg-4 col-md-6 bordered no-pad">
                     <img src="./img/Spikers/budaragina.jpg" alt="" class="speakers-img" name="budaragina">
@@ -718,14 +729,19 @@
                         <button class="speakers-btn modal-btn" name='brazinskaya'>О спикере</button>
                     </div>
                     <div class="col-lg-4 col-md-6 bordered no-pad">
-                        
+                            <img src="./img/Spikers/spiridonova.jpg" alt="" class="speakers-img" name="spiridonova">
+                            <h2 class="speakers-name">Анастасия Спиридонова</h2>
+                            <h3 class="speakers-prof">Мастер перманентного макияжа</h3>
+                            <div class="speakers-text">
+                                Губы с эффектом помады в один проход <br> "Wow lipstick"</div>
+                            <button class="speakers-btn modal-btn" name='spiridonova'>О спикере</button>
                     </div>
                     <div class="col-lg-4 col-md-6 bordered no-pad">
                         <img src="./img/Spikers/simtikov.jpg" alt="" class="speakers-img" name="simtikov">
                         <h2 class="speakers-name">Рустем Симтиков</h2>
                         <h3 class="speakers-prof">Мастер перманентного макияжа</h3>
                         <div class="speakers-text">
-                            Брови в авторской технике "Powder brows"</div>
+                            Перманентный макияж губ в авторской технике "Velvety Lips"</div>
                         <button class="speakers-btn modal-btn" name='simtikov'>О спикере</button>
                     </div>
             </div>
@@ -928,7 +944,7 @@
                         </tr>
                         <tr class="">
                             <td class="pricing-table__btn_wrap">
-                                <button class="pricing-table__btn modal-btn" name="callback">КУПИТЬ БИЛЕТ</button>
+                                <button class="pricing-table__btn modal-btn" name="payment">КУПИТЬ БИЛЕТ</button>
                             </td>
                     </table>
                 </div>
@@ -992,10 +1008,10 @@
                         </tr>
                         <tr class="">
                             <td class="pricing-table__btn_wrap">
-                                <button class="pricing-table__btn modal-btn" name="callback">КУПИТЬ БИЛЕТ</button>
+                                <button class="pricing-table__btn modal-btn" name="payment">КУПИТЬ БИЛЕТ</button>
                             </td>
                             <td class="pricing-table__btn_wrap bordered">
-                                <button class="pricing-table__btn modal-btn" name="callback">КУПИТЬ БИЛЕТ</button>
+                                <button class="pricing-table__btn modal-btn" name="payment">КУПИТЬ БИЛЕТ</button>
                             </td>
                         </tr>
                     </table>

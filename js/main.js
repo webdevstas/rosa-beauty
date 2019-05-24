@@ -3,7 +3,8 @@ let modal = document.querySelector('#modal'),
     closeBtn = document.querySelector('#close'),
     btn = document.querySelectorAll('.modal-btn'),
     modalBlock = document.querySelectorAll('.modal-block'),
-    speakersImg = document.querySelectorAll('.speakers-img')
+    speakersImg = document.querySelectorAll('.speakers-img'),
+    payBtn = document.querySelector('#pay-btn');
 
 
 closeBtn.addEventListener('click', function () {
@@ -25,6 +26,10 @@ for (i = 0; i < speakersImg.length; i++) {
     })
 }
 
+payBtn.addEventListener('click', function() {
+    modalClose();
+    location.href = '#main';
+});
 
 function modalClose() {
     modal.style.display = 'none';
