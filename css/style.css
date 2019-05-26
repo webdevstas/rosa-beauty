@@ -288,12 +288,21 @@
 }
 
 @media (max-width: 576px) {
+  .interest {
+    background: none;
+  }
   .programm-wrap {
     background-size: cover;
   }
 }
 
 @media (max-width: 768px) {
+  .forwho {
+    background: none;
+  }
+  .interest-down {
+    margin-top: 0;
+  }
   .programm-wrap {
     background: none;
   }
@@ -333,6 +342,24 @@
   cursor: pointer;
   outline: none;
   margin-bottom: 30px;
+}
+
+@media (max-width: 768px) {
+  .speakers-img {
+    width: 50%;
+  }
+  .speakers-btn {
+    width: 50%;
+  }
+}
+
+@media (max-width: 576px) {
+  .speakers-img {
+    width: 70%;
+  }
+  .speakers-btn {
+    width: 70%;
+  }
 }
 
 .sponsors {
