@@ -459,6 +459,11 @@ td {
   font-size: 22px;
 }
 
+.footer-contact__link {
+  color: #ffffff;
+  text-decoration: none;
+}
+
 .footer-btn {
   margin-bottom: 20px;
 }
