@@ -314,6 +314,7 @@
   width: 250px;
   height: 250px;
   cursor: pointer;
+  margin-top: 30px;
 }
 
 .speakers-name {
@@ -343,7 +344,6 @@
   text-align: start;
   cursor: pointer;
   outline: none;
-  margin-bottom: 30px;
 }
 
 @media (max-width: 768px) {
