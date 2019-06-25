@@ -315,6 +315,7 @@
   height: 250px;
   cursor: pointer;
   margin-top: 30px;
+  display: block;
 }
 
 .speakers-name {
@@ -344,12 +345,6 @@
   text-align: start;
   cursor: pointer;
   outline: none;
-}
-
-@media (max-width: 768px) {
-  .speakers-btn {
-    width: 50%;
-  }
 }
 
 .sponsors {
@@ -445,17 +440,20 @@ td {
 }
 
 .footer-contact {
-  margin-bottom: 50px;
+  margin-top: 15px;
+  margin-left: 10px;
   font-size: 22px;
 }
 
 .footer-contact__link {
   color: #ffffff;
   text-decoration: none;
+  display: block;
 }
 
 .footer-btn {
   margin-bottom: 20px;
+  margin-top: 20px;
 }
 
 @media (max-width: 576px) {
